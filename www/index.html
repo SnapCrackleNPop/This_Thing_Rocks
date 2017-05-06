@@ -1,0 +1,27 @@
+<html>
+  <head>
+	<icon src="icon.png" platform="android" qualifier="icon"/>
+	<preference name="phonegap-version" value="cli-5.2.0" />
+	<script src="cordova.js"></script>
+    <title>Tetris</title>
+    <style>
+      body{
+        background: black;
+        color: #e0e0e0;
+        font-family: Arial;
+        text-align: center;
+      }
+      canvas{
+        border: solid .2em #fff;
+        height: 90%;
+      }
+    </style>
+  </head>
+  <body id="thing">
+    <div id="score"></div>
+    <canvas id="tetris" width="360" height="600"> </canvas>
+	<script src="phonegap.js"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+    <script src="js/tetrisMoblie.js"></script>
+  </body>
+</html>
